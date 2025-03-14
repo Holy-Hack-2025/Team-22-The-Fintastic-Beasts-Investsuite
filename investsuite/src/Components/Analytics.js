@@ -62,8 +62,8 @@ function AnalyticsPage() {
         </thead>
         <tbody>
           <tr>
-            <td>${portfolioData.totalValue}</td>
-            <td>{portfolioData.totalChange}%</td>
+            <td>${portfolioData.portfolioValue}</td>
+            <td>{portfolioData.portfolioReturns}%</td>
           </tr>
         </tbody>
       </table>
