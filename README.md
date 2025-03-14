@@ -14,3 +14,7 @@ In the analytics screen users get an overview of how their investments are doing
 In the competition screen users can find their friends and see where they are in the weekly rankings according to their gained revenue.
 
 In the search screen we implemented an API from financialdata.net where users can gain information on real-life stocks in real-time!
+
+We implemented a JSON database with different users to get real data in our screen read from a database. 
+
+All the relevant code can be found within the Components folder in the src folder.
