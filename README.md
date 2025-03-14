@@ -1,7 +1,7 @@
 # Holy Hack - repo team The Fintastic Beasts
 Welcome to your personal Holy Hack GitHub repository! This serves as a central hub for submitting your code to be reviewed during the judging sessions. You should modify this README file to better explain your project to the judges, making it easier for them to understand your work.
 
-## Our Solution!
+## Our Solution: stockWHALE!
 Our solution is called the stockWHALE. It is a React app for now.
 
 Our app consists of 4 different screens: we have the home screen, analytics screen, Competition screen and a Search screen.
