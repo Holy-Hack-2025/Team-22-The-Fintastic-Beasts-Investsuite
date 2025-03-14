@@ -11,6 +11,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import users from "./Users.json";
 
 // Register the necessary components
 ChartJS.register(
@@ -25,16 +26,7 @@ ChartJS.register(
 );
 
 function AnalyticsPage() {
-  const portfolioData = {
-    totalValue: 1250, // Example data
-    totalChange: 12.5, // Example data, percentage change
-    assets: [
-      { name: "IBM", value: 500, change: 10 },
-      { name: "Coca-Cola", value: 300, change: 5 },
-      { name: "Bonds", value: 200, change: 8 },
-      { name: "Real Estate", value: 250, change: 12 },
-    ],
-  };
+  const portfolioData = users.find((user) => user.name === "Maxim");
 
   const lineChartData = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
