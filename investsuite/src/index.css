@@ -33,18 +33,6 @@ body, html, #root {
   background: white;
 }
 
-.navbar {
-  position: absolute;
-  bottom: 0;
-  width: 375px;
-  height: 60px;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 1px solid #ddd;
-}
-
 /* Home / Flashcard Container */
 .home-container {
   display: flex;
@@ -93,21 +81,6 @@ body, html, #root {
   color: #333;
 }
 
-.top-menu button {
-  background-color: #2196F3;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s;
-}
-
-.top-menu button:hover {
-  background-color: #1976D2;
-}
-
 /* Content area below TopMenu */
 .content-area {
   position: absolute;
@@ -153,3 +126,118 @@ body, html, #root {
   width: 24px; /* More precise control over icon size */
   height: 24px;
 }
+
+
+.profile-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* CompetitionPage.css */
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.podium-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.podium-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.podium-item p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.podium-item .score {
+  font-size: 22px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.first {
+  background-color: gold;
+}
+
+.second {
+  background-color: silver;
+}
+
+.third {
+  background-color: #cd7f32; /* bronze */
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.leaderboard-item {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item .rank {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.leaderboard-item .name {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.leaderboard-item .score {
+  font-size: 18px;
+  color: #4caf50;
+  font-weight: bold;
+}
+

@@ -7,6 +7,7 @@ import Competition from "./Components/Competition";
 import Search from "./Components/Search";
 import Navbar from "./Components/Navbar";
 import TopMenu from "./Components/Topmenu";
+import ProfilePage from "./Components/Profilepage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <TopMenu />
         <Routes>
+          <Route path="/profilepage" element={<ProfilePage />} />
           <Route path="/" element={<Home />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/competition" element={<Competition />} />
