@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Maxim",
+    "lastName": "Croon",
+    "email": "maxim.croon@example.com",
+    "portfolioValue": 1250,
+    "portfolioReturns": 12.5,
+    "assets": [
+      { "name": "IBM", "value": 500, "change": 10 },
+      { "name": "Coca-Cola", "value": 300, "change": 5 },
+      { "name": "Bonds", "value": 200, "change": 8 },
+      { "name": "Real Estate", "value": 250, "change": 12 }
+    ]
+  },
+  {
+    "name": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "portfolioValue": 95000,
+    "portfolioReturns": 10,
+    "assets": [
+      { "name": "Stock C", "value": 40000, "change": 3 },
+      { "name": "Stock D", "value": 55000, "change": 7 }
+    ]
+  },
+  {
+    "name": "Alice",
+    "lastName": "Wonderland",
+    "email": "alice@example.com",
+    "portfolioValue": 150000,
+    "portfolioReturns": 20,
+    "assets": [
+      { "name": "Stock E", "value": 80000, "change": 8 },
+      { "name": "Stock F", "value": 70000, "change": 12 }
+    ]
+  },
+  {
+    "name": "Bob",
+    "lastName": "Johnson",
+    "email": "bob.johnson@example.com",
+    "portfolioValue": 75000,
+    "portfolioReturns": 5,
+    "assets": [
+      { "name": "Stock G", "value": 30000, "change": 2 },
+      { "name": "Stock H", "value": 45000, "change": 3 }
+    ]
+  },
+  {
+    "name": "Charlie",
+    "lastName": "Brown",
+    "email": "charlie.brown@example.com",
+    "portfolioValue": 180000,
+    "portfolioReturns": 18,
+    "assets": [
+      { "name": "Stock I", "value": 100000, "change": 9 },
+      { "name": "Stock J", "value": 80000, "change": 9 }
+    ]
+  },
+  {
+    "name": "Emily",
+    "lastName": "Clark",
+    "email": "emily.clark@example.com",
+    "portfolioValue": 67000,
+    "portfolioReturns": 12,
+    "assets": [
+      { "name": "Stock K", "value": 40000, "change": 6 },
+      { "name": "Stock L", "value": 27000, "change": 6 }
+    ]
+  },
+  {
+    "name": "David",
+    "lastName": "Williams",
+    "email": "david.williams@example.com",
+    "portfolioValue": 210000,
+    "portfolioReturns": 25,
+    "assets": [
+      { "name": "Stock M", "value": 130000, "change": 13 },
+      { "name": "Stock N", "value": 80000, "change": 12 }
+    ]
+  },
+  {
+    "name": "Sophia",
+    "lastName": "Davis",
+    "email": "sophia.davis@example.com",
+    "portfolioValue": 56000,
+    "portfolioReturns": 7,
+    "assets": [
+      { "name": "Stock O", "value": 40000, "change": 4 },
+      { "name": "Stock P", "value": 16000, "change": 3 }
+    ]
+  },
+  {
+    "name": "Michael",
+    "lastName": "Anderson",
+    "email": "michael.anderson@example.com",
+    "portfolioValue": 92000,
+    "portfolioReturns": 14,
+    "assets": [
+      { "name": "Stock Q", "value": 50000, "change": 7 },
+      { "name": "Stock R", "value": 42000, "change": 7 }
+    ]
+  },
+  {
+    "name": "Olivia",
+    "lastName": "Martinez",
+    "email": "olivia.martinez@example.com",
+    "portfolioValue": 105000,
+    "portfolioReturns": 16,
+    "assets": [
+      { "name": "Stock S", "value": 60000, "change": 8 },
+      { "name": "Stock T", "value": 45000, "change": 8 }
+    ]
+  }
+]
