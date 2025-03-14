@@ -7,11 +7,11 @@ const Competition = () => {
     { name: "Alex", returns: "+5%" },
     { name: "Line", returns: "+3%" },
     { name: "Laura", returns: "+1%" },
-    { name: "Robbe", returns: "+10%" },
-    { name: "Lucas", returns: "+8%" },
-    { name: "Tiemen", returns: "+5%" },
-    { name: "Arthur", returns: "+3%" },
-    { name: "Senne", returns: "+1%" },
+    { name: "Robbe", returns: "+0.01%" },
+    { name: "Lucas", returns: "+0%" },
+    { name: "Tiemen", returns: "-5%" },
+    { name: "Arthur", returns: "-13%" },
+    { name: "Senne", returns: "-15%" },
   ];
 
   return (
