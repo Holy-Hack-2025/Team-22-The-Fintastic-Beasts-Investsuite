@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 const TopMenu = () => {
   return (
     <div className="top-menu">
-      <h1>InvestSuitePRO</h1>
+      <h1>stockWHALE</h1>
       <NavLink
         to="/profilepage"
         className={({ isActive }) => (isActive ? "active" : "")}
