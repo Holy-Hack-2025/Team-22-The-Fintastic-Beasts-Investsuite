@@ -3,6 +3,11 @@ import React, { useState } from "react";
 function ProfilePage() {
   const [firstName, setFirstName] = useState("John");
   const [lastName, setLastName] = useState("Doe");
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
 
   return (
     <div className="content-area">
@@ -30,6 +35,16 @@ function ProfilePage() {
             onChange={(e) => setLastName(e.target.value)}
           />
         </div>
+        <div className="input-group">
+          <label>Add a Friend:</label>
+          <input
+            type="email"
+            placeholder="Enter friend's email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+        </div>
+        <button>Add Friend</button>
       </div>
     </div>
   );
