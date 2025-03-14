@@ -26,13 +26,13 @@ ChartJS.register(
 
 function AnalyticsPage() {
   const portfolioData = {
-    totalValue: 120000, // Example data
-    totalChange: 15, // Example data, percentage change
+    totalValue: 1250, // Example data
+    totalChange: 12.5, // Example data, percentage change
     assets: [
-      { name: "Stock A", value: 50000, change: 10 },
-      { name: "Stock B", value: 30000, change: 5 },
-      { name: "Bonds", value: 20000, change: 8 },
-      { name: "Real Estate", value: 10000, change: 12 },
+      { name: "IBM", value: 500, change: 10 },
+      { name: "Coca-Cola", value: 300, change: 5 },
+      { name: "Bonds", value: 200, change: 8 },
+      { name: "Real Estate", value: 250, change: 12 },
     ],
   };
 
@@ -41,7 +41,7 @@ function AnalyticsPage() {
     datasets: [
       {
         label: "Portfolio Value ($)",
-        data: [100000, 105000, 110000, 115000, 120000, 125000], // Example data
+        data: [1000, 1049, 933, 877, 1023, 1250], // Example data
         borderColor: "#4caf50",
         fill: false,
       },
@@ -61,16 +61,21 @@ function AnalyticsPage() {
   return (
     <div className="content-area">
       <h2>Investment Portfolio Overview</h2>
-      <div className="overview">
-        <div className="total-value">
-          <h3>Total Portfolio Value</h3>
-          <p>${portfolioData.totalValue}</p>
-        </div>
-        <div className="performance">
-          <h3>Overall Performance</h3>
-          <p>{portfolioData.totalChange}%</p>
-        </div>
-      </div>
+      <table className="portfolio-table">
+        <thead>
+          <tr>
+            <th>Total Value:</th>
+            <th>Total Returns:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>${portfolioData.totalValue}</td>
+            <td>{portfolioData.totalChange}%</td>
+          </tr>
+        </tbody>
+      </table>
+
       <div className="charts">
         <div className="line-chart">
           <h3>Portfolio Value Over Time</h3>
@@ -96,53 +101,3 @@ function AnalyticsPage() {
 }
 
 export default AnalyticsPage;
-
-// import React from "react";
-// import { Line } from "react-chartjs-2";
-// import {
-//   Chart as ChartJS,
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Title,
-//   Tooltip,
-//   Legend,
-// } from "chart.js";
-
-// // Register necessary Chart.js components
-// ChartJS.register(
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Title,
-//   Tooltip,
-//   Legend
-// );
-
-// const Analytics = () => {
-//   const data = {
-//     labels: ["Jan", "Feb", "Mar", "Apr", "May"],
-//     datasets: [
-//       {
-//         label: "Investment Growth",
-//         data: [65, 59, 80, 81, 56],
-//         borderColor: "rgba(75,192,192,1)",
-//         backgroundColor: "rgba(75,192,192,0.2)",
-//         fill: true,
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className="content-area">
-//       <div>
-//         <h2>Investment Analytics</h2>
-//         <Line data={data} />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Analytics;
