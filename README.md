@@ -1,37 +1,16 @@
 # Holy Hack - repo team The Fintastic Beasts
 Welcome to your personal Holy Hack GitHub repository! This serves as a central hub for submitting your code to be reviewed during the judging sessions. You should modify this README file to better explain your project to the judges, making it easier for them to understand your work.
 
-## 🚀 Getting Started
+## Our Solution!
+Our solution is called the stockWHALE. It is a React app for now.
 
-Each team will be given its own repository within the **Holy Hack** GitHub organization, this is your personal repo. Follow these steps to participate:
+Our app consists of 4 different screens: we have the home screen, analytics screen, Competition screen and a Search screen.
+It alsof features a navigation bar at the bottom and a menu bar at the top.
 
-1. **Clone this repository to your local machine using**:
-   ```sh
-   git clone https://github.com/HOLY-HACK-ORGANIZATION/YOUR-TEAM-REPO.git
-   ```
-2. **Add your project files to the appropriate directory in your team's repository**.
-3. **Commit and push your changes**:
-   ```sh
-   git add .
-   git commit -m "added my feature"
-   git push origin my-feature
-   ```
-4. **Submit a pull request (PR)** to your team's repository for code review and merge.
+In the home screen the users can scroll through flashcards relating to their investment portfolio reports.
 
-## Repository Structure (Per Team)
+In the analytics screen users get an overview of how their investments are doing and can alter this screen to their liking.
 
-```
-YOUR-TEAM-REPO/
-│-- README.md # Documentation for your team's project
-│-- src/ # source directory
-│-- docs/ # Additional documentation or assets
-```
+In the competition screen users can find their friends and see where they are in the weekly rankings according to their gained revenue.
 
-## Contribution Guidelines
-
-- Make sure your code is clean and well documented.
-- Follow coding standards and best practices.
-- Submit your projects before the 16:00 deadline.
-
-## ❓ Need help?
-If you have any questions, you can contact the github guru's.
+In the search screen we implemented an API from financialdata.net where users can gain information on real-life stocks in real-time!
