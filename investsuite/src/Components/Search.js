@@ -1,3 +1,6 @@
+// This is the implementation of the Search page in the REACT app.
+// It uses the financialdata.net API to gain access to real-time stock information.
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -7,6 +10,7 @@ const Search = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  // We handle our API by sending GET messages with the given query by the user.
   useEffect(() => {
     const fetchData = async () => {
       if (!query) return; // Skip API call if query is empty
@@ -46,6 +50,7 @@ const Search = () => {
     return () => clearTimeout(debounceTimer); // Clear the timeout on component unmount or query change
   }, [query]);
 
+  // HTML code to construct the page, accept the user's input and give the real-time information on real-life stocks.
   return (
     <div className="content-area">
       <h2>Search for Stocks</h2>

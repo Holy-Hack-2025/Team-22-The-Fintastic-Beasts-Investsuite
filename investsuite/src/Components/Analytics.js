@@ -1,3 +1,5 @@
+// This is the code for the analytics page in the REACT app
+
 import React from "react";
 import { Line, Pie } from "react-chartjs-2";
 import {
@@ -25,9 +27,12 @@ ChartJS.register(
   Legend
 );
 
+// Main function
 function AnalyticsPage() {
+  // find the current user in the database, which is me: Maxim
   const portfolioData = users.find((user) => user.name === "Maxim");
 
+  // Make a line chart of the user's portfolio value of last year.
   const lineChartData = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
     datasets: [
@@ -40,6 +45,7 @@ function AnalyticsPage() {
     ],
   };
 
+  // Make a pie chart out of the user's assets.
   const pieChartData = {
     labels: portfolioData.assets.map((asset) => asset.name),
     datasets: [
@@ -50,6 +56,7 @@ function AnalyticsPage() {
     ],
   };
 
+  // Return the HTML content of the analytics page.
   return (
     <div className="content-area">
       <h2>Investment Portfolio Overview</h2>

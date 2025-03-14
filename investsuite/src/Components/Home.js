@@ -1,6 +1,9 @@
+// This is the code for the homepage of our REACT app.
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Example flashcards given in the app. Should be replaced by AI generated ones in the final model.
 const flashcards = [
   { id: 1, content: "Your investment grew by 5% this week!" },
   { id: 2, content: "Check out the latest trends in tech stocks!" },
@@ -8,9 +11,11 @@ const flashcards = [
   { id: 4, content: "Explore new investment opportunities!" },
 ];
 
+// Main function of the page.
 function HomePage() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // functionality to drag the flashcards.
   const handleDragEnd = (event, info) => {
     if (info.offset.y < -100 && currentIndex < flashcards.length - 1) {
       setCurrentIndex(currentIndex + 1);
@@ -19,6 +24,7 @@ function HomePage() {
     }
   };
 
+  // gives the HTML and makes sure everything is animated when scrolling.
   return (
     <div className="content-area">
       {/* <div className="home-container"> */}

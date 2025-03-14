@@ -1,6 +1,9 @@
+// Implementation of a profilepage in the REACT app when clicked on the user page.
+
 import React, { useState } from "react";
 import users from "./Users.json";
 
+// User can give their first- and lastname and invite a friend.
 function ProfilePage() {
   const current_user = users.find((user) => user.name === "Maxim");
   const [firstName, setFirstName] = useState(current_user.name);
@@ -11,6 +14,7 @@ function ProfilePage() {
     setEmail(event.target.value);
   };
 
+  // This HTML has options to note their first- and last name and give an email of someone to befriend.
   return (
     <div className="content-area">
       <div className="profile-page">

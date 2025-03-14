@@ -1,9 +1,12 @@
+// This is the Javascript file for the competition page in the REACT app.
+
 import React, { useEffect, useState } from "react";
 import users from "./Users.json";
 
 const Competition = () => {
   const [leaderboard, setSortedUsers] = useState([]);
 
+  // Sort all the users in the database on their returns to make the competition.
   useEffect(() => {
     if (users.length > 0) {
       // Check if the users array is not empty
@@ -14,8 +17,10 @@ const Competition = () => {
     }
   }, []);
 
+  // Make sure everything is loaded in.
   if (leaderboard.length === 0) return <div>Loading...</div>;
 
+  // return the HTML where we highlight the first three contestants and after that all the rest.
   return (
     <div className="content-area">
       <div className="podium">
