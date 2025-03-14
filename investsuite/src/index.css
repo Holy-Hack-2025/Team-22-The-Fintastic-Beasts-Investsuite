@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  position: relative;
+  width: 390px;
+  height: 844px; /* iPhone 14 screen size */
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+  background: white;
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 375px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Home / Flashcard Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  scroll-snap-type: y mandatory;
+}
+
+/* Flashcard Styling */
+.flashcard {
+  width: 100%;
+  height: 85vh; /* Takes most of the content-area's height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  scroll-snap-align: start;
+}
+
+
+/* Top menu styling */
+.top-menu {
+  border-bottom: 1px solid #ddd;
+  z-index: 10; /* Ensures it's above other content */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 0;
+  position: absolute;
+  /* position: relative; */
+  top: 10vh;
+  width: 100%;
+  max-width: 390px; /* Match the width of the app-container */
+  border-top: 1px solid #ddd;
+  height: 5vh; /* Proportional height */
+}
+
+.top-menu h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.top-menu button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.top-menu button:hover {
+  background-color: #1976D2;
+}
+
+/* Content area below TopMenu */
+.content-area {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 390px; /* Match the width of the app-container */
+  border-top: 1px solid #ddd;
+  height: 8vh; /* Proportional height */
+}
+
+.navbar a {
+  color: #888;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.2s;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar a.active {
+  color: #2196F3;
+}
+
+.navbar a:hover {
+  color: #2196F3;
+}
+
+.navbar svg {
+  width: 24px; /* More precise control over icon size */
+  height: 24px;
+}
