@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import users from "./Users.json";
 
 function ProfilePage() {
-  const [firstName, setFirstName] = useState("John");
-  const [lastName, setLastName] = useState("Doe");
+  const current_user = users.find((user) => user.name === "Maxim");
+  const [firstName, setFirstName] = useState(current_user.name);
+  const [lastName, setLastName] = useState(current_user.lastName);
   const [email, setEmail] = useState("");
 
   const handleEmailChange = (event) => {
