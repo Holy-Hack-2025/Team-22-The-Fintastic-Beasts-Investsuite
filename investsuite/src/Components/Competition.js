@@ -16,27 +16,27 @@ const Competition = () => {
 
   return (
     <div className="content-area">
-      <div className="leaderboard">
-        <div className="podium">
-          <div className="podium-item first">
-            <h3>1st</h3>
-            <p>{leaderboard[0].name}</p>
-            <span className="score">{leaderboard[0].score}</span>
-            <span className="return">{leaderboard[0].returns}</span>
-          </div>
-          <div className="podium-item second">
-            <h3>2nd</h3>
-            <p>{leaderboard[1].name}</p>
-            <span className="score">{leaderboard[1].score}</span>
-            <span className="return">{leaderboard[1].returns}</span>
-          </div>
-          <div className="podium-item third">
-            <h3>3rd</h3>
-            <p>{leaderboard[2].name}</p>
-            <span className="score">{leaderboard[2].score}</span>
-            <span className="return">{leaderboard[2].returns}</span>
-          </div>
+      {/* <div className="leaderboard"> */}
+      <div className="podium">
+        <div className="podium-item first">
+          <h3>1st</h3>
+          <p>{leaderboard[0].name}</p>
+          <span className="score">{leaderboard[0].score}</span>
+          <span className="return">{leaderboard[0].returns}</span>
         </div>
+        <div className="podium-item second">
+          <h3>2nd</h3>
+          <p>{leaderboard[1].name}</p>
+          <span className="score">{leaderboard[1].score}</span>
+          <span className="return">{leaderboard[1].returns}</span>
+        </div>
+        <div className="podium-item third">
+          <h3>3rd</h3>
+          <p>{leaderboard[2].name}</p>
+          <span className="score">{leaderboard[2].score}</span>
+          <span className="return">{leaderboard[2].returns}</span>
+        </div>
+        {/* </div> */}
       </div>
 
       <div className="leaderboard-list">
